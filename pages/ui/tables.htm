@@ -1,0 +1,371 @@
+<!doctype html>
+<!--
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  | Designer: Tsai. Cheng Peng [Canboo]                              |
+  | Auther Email: service(a)canboo.tw                                |
+  | Author Web: http://canboo.tw/                                    |
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="rating" content="general" />
+    <meta name="author" content="Tsai. Cheng Peng (Canboo)"/>
+
+    <title>Tables - Ciaoyu Web UI Kits</title>
+
+    <link rel="author license" href="http://canboo.tw/"/>
+    <link rel="shortcut icon" href="/CiaoyuUIKit/favicon.ico"/>
+    <link rel="icon" type="image/gif" href="/CiaoyuUIKit/favicon.gif"/>
+
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/package.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/ciaoyu.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/include.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/theme.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside></aside>
+        <header></header>
+        <main role="main">
+            <div class="main-inner">
+                <div class="page-header">
+                    <h1 class="page-title"><i class="fas fa-list-ul"></i> 表格 <small class="text-muted">Tables</small></h1>
+                    <p class="lead">Bootstrap 設置表格文件和範例。</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><span class="badge badge-warning">無障礙</span> 表格必須要擁有 <code>summary</code> 屬性</li>
+                                <li><span class="badge badge-warning">無障礙</span> 表格必須要擁有 <code>caption</code> 標籤</li>
+                                <li><span class="badge badge-warning">無障礙</span> 有多層標頭的表格，應使用對應標頭屬性，來建立表格標頭儲存格與資料儲存格之間的關連 <a href="https://www.handicap-free.nat.gov.tw/Download/Detail/1157?Category=47" title="XH1030101檢測碼說明 [開新視窗]" target="_blank">XH1030101檢測碼說明</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <section id="basic">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 基本 <small class="text-muted">Basic</small></h2>
+                            <p class="lead">表格應被包含在 <code>div.table-responsive</code> 內，以避免響應式設計衍生的表格顯示問題。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table" summary="範例">
+                                    <caption>這是位於caption標籤內的文字</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>表頭1</th>
+                                            <th>表頭2</th>
+                                            <th>表頭3</th>
+                                            <th>表頭4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table-responsive&quot;&gt;<br>    &lt;table class=&quot;table&quot; summary=&quot;範例&quot;&gt;<br>        &lt;caption&gt;這是位於caption標籤內的文字&lt;/caption&gt;<br>        &lt;thead&gt;<br>            &lt;tr&gt;<br>                &lt;th&gt;表頭1&lt;/th&gt;<br>                &lt;th&gt;表頭2&lt;/th&gt;<br>                &lt;th&gt;表頭3&lt;/th&gt;<br>                &lt;th&gt;表頭4&lt;/th&gt;<br>            &lt;/tr&gt;<br>        &lt;/thead&gt;<br>        &lt;tbody&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>        &lt;/tbody&gt;<br>    &lt;/table&gt;<br>&lt;/div&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="thead">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 表頭樣式 <small class="text-muted">Head style</small></h2>
+                            <p class="lead">使用如下兩個 <code>.thead-light</code> 或 <code>.thead-dark</code> 中的一個將 <code>&lt;thead&gt;</code> 顯示淺灰或深灰。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table" summary="範例">
+                                    <caption>這是位於caption標籤內的文字</caption>
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>表頭1</th>
+                                            <th>表頭2</th>
+                                            <th>表頭3</th>
+                                            <th>表頭4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table" summary="範例">
+                                    <caption>這是位於caption標籤內的文字</caption>
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>表頭1</th>
+                                            <th>表頭2</th>
+                                            <th>表頭3</th>
+                                            <th>表頭4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table-responsive&quot;&gt;<br>    &lt;table class=&quot;table&quot; summary=&quot;範例&quot;&gt;<br>        &lt;caption&gt;這是位於caption標籤內的文字&lt;/caption&gt;<br>        &lt;thead class=&quot;thead-dark&quot;&gt;<br>            &lt;tr&gt;<br>                &lt;th&gt;表頭1&lt;/th&gt;<br>                &lt;th&gt;表頭2&lt;/th&gt;<br>                &lt;th&gt;表頭3&lt;/th&gt;<br>                &lt;th&gt;表頭4&lt;/th&gt;<br>            &lt;/tr&gt;<br>        &lt;/thead&gt;<br>        &lt;tbody&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>        &lt;/tbody&gt;<br>    &lt;/table&gt;<br>    &lt;table class=&quot;table&quot; summary=&quot;範例&quot;&gt;<br>        &lt;caption&gt;這是位於caption標籤內的文字&lt;/caption&gt;<br>        &lt;thead class=&quot;thead-light&quot;&gt;<br>            &lt;tr&gt;<br>                &lt;th&gt;表頭1&lt;/th&gt;<br>                &lt;th&gt;表頭2&lt;/th&gt;<br>                &lt;th&gt;表頭3&lt;/th&gt;<br>                &lt;th&gt;表頭4&lt;/th&gt;<br>            &lt;/tr&gt;<br>        &lt;/thead&gt;<br>        &lt;tbody&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>        &lt;/tbody&gt;<br>    &lt;/table&gt;<br>&lt;/div&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="striped">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 條紋 <small class="text-muted">Striped</small></h2>
+                            <p class="lead">使用 <code>.table-striped</code> 在 <code>&lt;tbody&gt;</code> 中的任何表格行添加斑馬紋</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table table-striped" summary="範例">
+                                    <caption>這是位於caption標籤內的文字</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>表頭1</th>
+                                            <th>表頭2</th>
+                                            <th>表頭3</th>
+                                            <th>表頭4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table-responsive&quot;&gt;<br>    &lt;table class=&quot;table table-striped&quot; summary=&quot;範例&quot;&gt;<br>        &lt;caption&gt;這是位於caption標籤內的文字&lt;/caption&gt;<br>        &lt;thead&gt;<br>            &lt;tr&gt;<br>                &lt;th&gt;表頭1&lt;/th&gt;<br>                &lt;th&gt;表頭2&lt;/th&gt;<br>                &lt;th&gt;表頭3&lt;/th&gt;<br>                &lt;th&gt;表頭4&lt;/th&gt;<br>            &lt;/tr&gt;<br>        &lt;/thead&gt;<br>        &lt;tbody&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>        &lt;/tbody&gt;<br>    &lt;/table&gt;<br>&lt;/div&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="bordered">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 邊線 <small class="text-muted">Bordered</small></h2>
+                            <p class="lead">加入 <code>.table-bordered</code> 在表格和儲存格的四邊上添加邊框。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" summary="範例">
+                                    <caption>這是位於caption標籤內的文字</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>表頭1</th>
+                                            <th>表頭2</th>
+                                            <th>表頭3</th>
+                                            <th>表頭4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table-responsive&quot;&gt;<br>    &lt;table class=&quot;table table-bordered&quot; summary=&quot;範例&quot;&gt;<br>        &lt;caption&gt;這是位於caption標籤內的文字&lt;/caption&gt;<br>        &lt;thead&gt;<br>            &lt;tr&gt;<br>                &lt;th&gt;表頭1&lt;/th&gt;<br>                &lt;th&gt;表頭2&lt;/th&gt;<br>                &lt;th&gt;表頭3&lt;/th&gt;<br>                &lt;th&gt;表頭4&lt;/th&gt;<br>            &lt;/tr&gt;<br>        &lt;/thead&gt;<br>        &lt;tbody&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>        &lt;/tbody&gt;<br>    &lt;/table&gt;<br>&lt;/div&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="nobordered">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 無邊線 <small class="text-muted">No Bordered</small></h2>
+                            <p class="lead">加入 <code>.table-borderless</code> 在表格和儲存格移除邊框。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table table-borderless" summary="範例">
+                                    <caption>這是位於caption標籤內的文字</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>表頭1</th>
+                                            <th>表頭2</th>
+                                            <th>表頭3</th>
+                                            <th>表頭4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table-responsive&quot;&gt;<br>    &lt;table class=&quot;table table-borderless&quot; summary=&quot;範例&quot;&gt;<br>        &lt;caption&gt;這是位於caption標籤內的文字&lt;/caption&gt;<br>        &lt;thead&gt;<br>            &lt;tr&gt;<br>                &lt;th&gt;表頭1&lt;/th&gt;<br>                &lt;th&gt;表頭2&lt;/th&gt;<br>                &lt;th&gt;表頭3&lt;/th&gt;<br>                &lt;th&gt;表頭4&lt;/th&gt;<br>            &lt;/tr&gt;<br>        &lt;/thead&gt;<br>        &lt;tbody&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>        &lt;/tbody&gt;<br>    &lt;/table&gt;<br>&lt;/div&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="hover">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 滑入效果 <small class="text-muted">Hover</small></h2>
+                            <p class="lead">添加 <code>.table-hover</code> 以便在一個 <code>&lt;tbody&gt;</code> 中的表格行上啟用一個 hover 狀態。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table table-hover" summary="範例">
+                                    <caption>這是位於caption標籤內的文字</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>表頭1</th>
+                                            <th>表頭2</th>
+                                            <th>表頭3</th>
+                                            <th>表頭4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table-responsive&quot;&gt;<br>    &lt;table class=&quot;table table-hover&quot; summary=&quot;範例&quot;&gt;<br>        &lt;caption&gt;這是位於caption標籤內的文字&lt;/caption&gt;<br>        &lt;thead&gt;<br>            &lt;tr&gt;<br>                &lt;th&gt;表頭1&lt;/th&gt;<br>                &lt;th&gt;表頭2&lt;/th&gt;<br>                &lt;th&gt;表頭3&lt;/th&gt;<br>                &lt;th&gt;表頭4&lt;/th&gt;<br>            &lt;/tr&gt;<br>        &lt;/thead&gt;<br>        &lt;tbody&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>        &lt;/tbody&gt;<br>    &lt;/table&gt;<br>&lt;/div&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="nocaption">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 無標題 <small class="text-muted">No caption</small></h2>
+                            <p class="lead">使用 <code>.table-nocaption</code> 隱藏 <code>&lt;caption&gt;</code> 內容的呈現。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table table-nocaption" summary="範例">
+                                    <caption>這是位於caption標籤內的文字</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>表頭1</th>
+                                            <th>表頭2</th>
+                                            <th>表頭3</th>
+                                            <th>表頭4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>內容文字1</td>
+                                            <td>內容文字2</td>
+                                            <td>內容文字3</td>
+                                            <td>內容文字4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table-responsive&quot;&gt;<br>    &lt;table class=&quot;table table-nocaption&quot; summary=&quot;範例&quot;&gt;<br>        &lt;caption&gt;這是位於caption標籤內的文字&lt;/caption&gt;<br>        &lt;thead&gt;<br>            &lt;tr&gt;<br>                &lt;th&gt;表頭1&lt;/th&gt;<br>                &lt;th&gt;表頭2&lt;/th&gt;<br>                &lt;th&gt;表頭3&lt;/th&gt;<br>                &lt;th&gt;表頭4&lt;/th&gt;<br>            &lt;/tr&gt;<br>        &lt;/thead&gt;<br>        &lt;tbody&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>            &lt;tr&gt;<br>                &lt;td&gt;內容文字1&lt;/td&gt;<br>                &lt;td&gt;內容文字2&lt;/td&gt;<br>                &lt;td&gt;內容文字3&lt;/td&gt;<br>                &lt;td&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>        &lt;/tbody&gt;<br>    &lt;/table&gt;<br>&lt;/div&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="rwd">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 進階響應式表格 <small class="text-muted">Responsive table</small></h2>
+                            <p class="lead">使用 (991px)<code>.table-rwd</code>, (767px)<code>.table-rwd-md</code>, (575px)<code>.table-rwd-sm</code> 設定進階響應式表格內容的呈現。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table table-rwd" summary="範例">
+                                    <caption>這是位於caption標籤內的文字</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>表頭1</th>
+                                            <th>表頭2</th>
+                                            <th>表頭3</th>
+                                            <th>表頭4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-th="表頭1">內容文字1</td>
+                                            <td data-th="表頭2">內容文字2</td>
+                                            <td data-th="表頭3">內容文字3</td>
+                                            <td data-th="表頭4">內容文字4</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-th="表頭1">內容文字1</td>
+                                            <td data-th="表頭2">內容文字2</td>
+                                            <td data-th="表頭3">內容文字3</td>
+                                            <td data-th="表頭4">內容文字4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table-responsive&quot;&gt;<br>    &lt;table class=&quot;table table-rwd&quot; summary=&quot;範例&quot;&gt;<br>        &lt;caption&gt;這是位於caption標籤內的文字&lt;/caption&gt;<br>        &lt;thead&gt;<br>            &lt;tr&gt;<br>                &lt;th&gt;表頭1&lt;/th&gt;<br>                &lt;th&gt;表頭2&lt;/th&gt;<br>                &lt;th&gt;表頭3&lt;/th&gt;<br>                &lt;th&gt;表頭4&lt;/th&gt;<br>            &lt;/tr&gt;<br>        &lt;/thead&gt;<br>        &lt;tbody&gt;<br>            &lt;tr&gt;<br>                &lt;td data-th=&quot;表頭1&quot;&gt;內容文字1&lt;/td&gt;<br>                &lt;td data-th=&quot;表頭2&quot;&gt;內容文字2&lt;/td&gt;<br>                &lt;td data-th=&quot;表頭3&quot;&gt;內容文字3&lt;/td&gt;<br>                &lt;td data-th=&quot;表頭4&quot;&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>            &lt;tr&gt;<br>                &lt;td data-th=&quot;表頭1&quot;&gt;內容文字1&lt;/td&gt;<br>                &lt;td data-th=&quot;表頭2&quot;&gt;內容文字2&lt;/td&gt;<br>                &lt;td data-th=&quot;表頭3&quot;&gt;內容文字3&lt;/td&gt;<br>                &lt;td data-th=&quot;表頭4&quot;&gt;內容文字4&lt;/td&gt;<br>            &lt;/tr&gt;<br>        &lt;/tbody&gt;<br>    &lt;/table&gt;<br>&lt;/div&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/CiaoyuUIKit/assets/jquery-3.3.1.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/popper.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/package.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/ciaoyu.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/include.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/setting.js" defer></script>
+</body>
+</html>

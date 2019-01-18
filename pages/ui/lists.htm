@@ -1,0 +1,207 @@
+<!doctype html>
+<!--
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  | Designer: Tsai. Cheng Peng [Canboo]                              |
+  | Auther Email: service(a)canboo.tw                                |
+  | Author Web: http://canboo.tw/                                    |
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="rating" content="general" />
+    <meta name="author" content="Tsai. Cheng Peng (Canboo)"/>
+
+    <title>Lists - Ciaoyu Web UI Kits</title>
+
+    <link rel="author license" href="http://canboo.tw/"/>
+    <link rel="shortcut icon" href="/CiaoyuUIKit/favicon.ico"/>
+    <link rel="icon" type="image/gif" href="/CiaoyuUIKit/favicon.gif"/>
+
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/package.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/ciaoyu.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/include.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/theme.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside></aside>
+        <header></header>
+        <main role="main">
+            <div class="main-inner">
+                <div class="page-header">
+                    <h1 class="page-title"><i class="fas fa-list-ul"></i> 清單 <small class="text-muted">Lists</small></h1>
+                    <p class="lead">用於 Bootstrap 的清單列表項目和更多。在HTML網頁內容中，項目與項目(Items)若有關聯性，應當使用 <code>ul</code>, <code>ol</code> 或 <code>dl</code> 等標籤來表示，不應使用 <code>div</code> 或 <code>p</code> 等並沒有對應語義的標籤。</p>
+                </div>
+                <div class="page-content">
+                    <section id="basic">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 基本 <small class="text-muted">Basic</small></h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col">
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                                        <li>Maiores quis repudiandae provident ipsum quas.</li>
+                                        <li>Voluptas natus assumenda doloremque vero dicta.</li>
+                                    </ol>
+                                    <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ol&gt;<br>     &lt;li&gt;Lorem ipsum dolor sit amet, consectetur.&lt;/li&gt;<br>     &lt;li&gt;Maiores quis repudiandae provident ipsum quas.&lt;/li&gt;<br>     &lt;li&gt;Voluptas natus assumenda doloremque vero dicta.&lt;/li&gt;<br>&lt;/ol&gt;</code></pre></figure>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                                        <li>Maiores quis repudiandae provident ipsum quas.</li>
+                                        <li>Voluptas natus assumenda doloremque vero dicta.</li>
+                                    </ul>
+                                    <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul&gt;<br>    &lt;li&gt;Lorem ipsum dolor sit amet, consectetur.&lt;/li&gt;<br>    &lt;li&gt;Maiores quis repudiandae provident ipsum quas.&lt;/li&gt;<br>    &lt;li&gt;Voluptas natus assumenda doloremque vero dicta.&lt;/li&gt;<br>&lt;/ul&gt;</code></pre></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="unstyled">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 無樣示 <small class="text-muted">Unstyled</small></h2>
+                            <p class="lead">Bootstrap 已提供無樣示的類別 <code>.list-unstyled</code> ，若非特別需求，請勿自行在樣式表內設定過多的 <code>list-style: none;</code>。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col">
+                                    <ol class="list-unstyled">
+                                        <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                                        <li>Maiores quis repudiandae provident ipsum quas.</li>
+                                        <li>Voluptas natus assumenda doloremque vero dicta.</li>
+                                    </ol>
+                                    <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ol class=&quot;list-unstyled&quot;&gt;<br>     &lt;li&gt;Lorem ipsum dolor sit amet, consectetur.&lt;/li&gt;<br>     &lt;li&gt;Maiores quis repudiandae provident ipsum quas.&lt;/li&gt;<br>     &lt;li&gt;Voluptas natus assumenda doloremque vero dicta.&lt;/li&gt;<br>&lt;/ol&gt;</code></pre></figure>
+                                </div>
+                                <div class="col">
+                                    <ul class="list-unstyled">
+                                        <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                                        <li>Maiores quis repudiandae provident ipsum quas.</li>
+                                        <li>Voluptas natus assumenda doloremque vero dicta.</li>
+                                    </ul>
+                                    <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul class=&quot;list-unstyled&quot;&gt;<br>    &lt;li&gt;Lorem ipsum dolor sit amet, consectetur.&lt;/li&gt;<br>    &lt;li&gt;Maiores quis repudiandae provident ipsum quas.&lt;/li&gt;<br>    &lt;li&gt;Voluptas natus assumenda doloremque vero dicta.&lt;/li&gt;<br>&lt;/ul&gt;</code></pre></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="inline">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 行內 <small class="text-muted">Inline</small></h2>
+                            <p class="lead">請合併使用 <code>.list-inline</code> 及項目使用 <code>.list-inline-item</code></p>
+                        </div>
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col">
+                                    <ol class="list-inline">
+                                        <li class="list-inline-item">Lorem ipsum.</li>
+                                        <li class="list-inline-item">Maiores quis.</li>
+                                        <li class="list-inline-item">Voluptas natus.</li>
+                                    </ol>
+                                    <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ol class=&quot;list-inline&quot;&gt;<br>     &lt;li class=&quot;list-inline-item&quot;&gt;Lorem ipsum.&lt;/li&gt;<br>     &lt;li class=&quot;list-inline-item&quot;&gt;Maiores quis.&lt;/li&gt;<br>     &lt;li class=&quot;list-inline-item&quot;&gt;Voluptas natus.&lt;/li&gt;<br>&lt;/ol&gt;</code></pre></figure>
+                                </div>
+                                <div class="col">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">Lorem ipsum.</li>
+                                        <li class="list-inline-item">Maiores quis.</li>
+                                        <li class="list-inline-item">Voluptas natus.</li>
+                                    </ul>
+                                    <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul class=&quot;list-inline&quot;&gt;<br>    &lt;li class=&quot;list-inline-item&quot;&gt;Lorem ipsum.&lt;/li&gt;<br>    &lt;li class=&quot;list-inline-item&quot;&gt;Maiores quis.&lt;/li&gt;<br>    &lt;li class=&quot;list-inline-item&quot;&gt;Voluptas natus.&lt;/li&gt;<br>&lt;/ul&gt;</code></pre></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="Nested">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 巢狀 <small class="text-muted">Nested</small></h2>
+                            <p class="lead">所有的子層清單應被包含在 <code>li</code> 中，不應獨立於 <code>li + li</code> 之間。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col">
+                                    <ol>
+                                        <li>Lorem ipsum.
+                                            <ol>
+                                                <li>Lorem ipsum.</li>
+                                                <li>Maiores quis.</li>
+                                                <li>Voluptas natus.
+                                                    <ol>
+                                                        <li>Lorem ipsum.</li>
+                                                        <li>Maiores quis.</li>
+                                                        <li>Voluptas natus.</li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>Maiores quis.</li>
+                                        <li>Voluptas natus.</li>
+                                    </ol>
+                                    <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ol&gt;<br>    &lt;li&gt;Lorem ipsum.<br>        &lt;ol&gt;<br>            &lt;li&gt;Lorem ipsum.&lt;/li&gt;<br>            &lt;li&gt;Maiores quis.&lt;/li&gt;<br>            &lt;li&gt;Voluptas natus.<br>                &lt;ol&gt;<br>                    &lt;li&gt;Lorem ipsum.&lt;/li&gt;<br>                    &lt;li&gt;Maiores quis.&lt;/li&gt;<br>                    &lt;li&gt;Voluptas natus.&lt;/li&gt;<br>                &lt;/ol&gt;<br>            &lt;/li&gt;<br>        &lt;/ol&gt;<br>    &lt;/li&gt;<br>    &lt;li&gt;Maiores quis.&lt;/li&gt;<br>    &lt;li&gt;Voluptas natus.&lt;/li&gt;<br>&lt;/ol&gt;<br></code></pre></figure>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li>Lorem ipsum.
+                                            <ul>
+                                                <li>Lorem ipsum.</li>
+                                                <li>Maiores quis.</li>
+                                                <li>Voluptas natus.
+                                                    <ul>
+                                                        <li>Lorem ipsum.</li>
+                                                        <li>Maiores quis.</li>
+                                                        <li>Voluptas natus.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Maiores quis.</li>
+                                        <li>Voluptas natus.</li>
+                                    </ul>
+                                    <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul&gt;<br>    &lt;li&gt;Lorem ipsum.<br>        &lt;ul&gt;<br>            &lt;li&gt;Lorem ipsum.&lt;/li&gt;<br>            &lt;li&gt;Maiores quis.&lt;/li&gt;<br>            &lt;li&gt;Voluptas natus.<br>                &lt;ul&gt;<br>                    &lt;li&gt;Lorem ipsum.&lt;/li&gt;<br>                    &lt;li&gt;Maiores quis.&lt;/li&gt;<br>                    &lt;li&gt;Voluptas natus.&lt;/li&gt;<br>                &lt;/ul&gt;<br>            &lt;/li&gt;<br>        &lt;/ul&gt;<br>    &lt;/li&gt;<br>    &lt;li&gt;Maiores quis.&lt;/li&gt;<br>    &lt;li&gt;Voluptas natus.&lt;/li&gt;<br>&lt;/ul&gt;<br></code></pre></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="description">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 描述型清單 <small class="text-muted">Description List</small></h2>
+                            <p class="lead">如果 dt 需要文字被截段可以使用 <code>.text-truncate</code>，如範例演示</p>
+                        </div>
+                        <div class="section-content">
+                            <dl class="row">
+                                <dt class="col-sm-3">Description lists</dt>
+                                <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+                                <dt class="col-sm-3">Euismod</dt>
+                                <dd class="col-sm-9">
+                                <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+                                <p>Donec id elit non mi porta gravida at eget metus.</p>
+                                </dd>
+
+                                <dt class="col-sm-3">Malesuada porta</dt>
+                                <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+                                <dt class="col-sm-3 text-truncate text-danger">Truncated term is truncated.Truncated term is truncated.Truncated term is truncated.</dt>
+                                <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                            </dl>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;dl class=&quot;row&quot;&gt;<br>    &lt;dt class=&quot;col-sm-3&quot;&gt;Description lists&lt;/dt&gt;<br>    &lt;dd class=&quot;col-sm-9&quot;&gt;A description list is perfect for defining terms.&lt;/dd&gt;<br><br>    &lt;dt class=&quot;col-sm-3&quot;&gt;Euismod&lt;/dt&gt;<br>    &lt;dd class=&quot;col-sm-9&quot;&gt;<br>        &lt;p&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;/p&gt;<br>        &lt;p&gt;Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;<br>    &lt;/dd&gt;<br><br>    &lt;dt class=&quot;col-sm-3&quot;&gt;Malesuada porta&lt;/dt&gt;<br>    &lt;dd class=&quot;col-sm-9&quot;&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/dd&gt;<br><br>    &lt;dt class=&quot;col-sm-3 text-truncate&quot;&gt;Truncated term is truncated.Truncated term is truncated.Truncated term is truncated.&lt;/dt&gt;<br>    &lt;dd class=&quot;col-sm-9&quot;&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/dd&gt;<br>&lt;/dl&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/CiaoyuUIKit/assets/jquery-3.3.1.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/popper.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/package.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/ciaoyu.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/include.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/setting.js" defer></script>
+</body>
+</html>

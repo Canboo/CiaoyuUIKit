@@ -1,0 +1,411 @@
+<!doctype html>
+<!--
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  | Designer: Tsai. Cheng Peng [Canboo]                              |
+  | Auther Email: service(a)canboo.tw                                |
+  | Author Web: http://canboo.tw/                                    |
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="rating" content="general" />
+    <meta name="author" content="Tsai. Cheng Peng (Canboo)"/>
+
+    <title>Buttons - Ciaoyu Web UI Kits</title>
+
+    <link rel="author license" href="http://canboo.tw/"/>
+    <link rel="shortcut icon" href="/CiaoyuUIKit/favicon.ico"/>
+    <link rel="icon" type="image/gif" href="/CiaoyuUIKit/favicon.gif"/>
+
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/package.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/ciaoyu.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/include.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/theme.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside></aside>
+        <header></header>
+        <main role="main">
+            <div class="main-inner">
+                <div class="page-header">
+                    <h1 class="page-title"><i class="fas fa-list-ul"></i> 按鈕 <small class="text-muted">Buttons</small></h1>
+                    <p class="lead">用於 Bootstrap 自訂按鈕樣式到表單、對話方塊等操作。</p>
+                </div>
+                <div class="page-content">
+                    <section id="basic">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 基本 <small class="text-muted">Basic</small></h2>
+                            <p class="lead">使用 Bootstrap 佈景色調的按鈕，可使用於 <code>button</code> 及 <code>a</code> 標籤上。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.btn.btn-primary</code></td>
+                                            <td><button type="button" class="btn btn-primary">Primary</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-secondary</code></td>
+                                            <td><button type="button" class="btn btn-secondary">Secondary</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-success</code></td>
+                                            <td><button type="button" class="btn btn-success">Success</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-danger</code></td>
+                                            <td><button type="button" class="btn btn-danger">Danger</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-warning</code></td>
+                                            <td><button type="button" class="btn btn-warning">Warning</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-info</code></td>
+                                            <td><button type="button" class="btn btn-info">Info</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-light</code></td>
+                                            <td><button type="button" class="btn btn-light">Light</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-dark</code></td>
+                                            <td><button type="button" class="btn btn-dark">Dark</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-link</code></td>
+                                            <td><button type="button" class="btn btn-link">Link</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="outline">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 幽靈按鈕 <small class="text-muted">Outline buttons</small></h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.btn.btn-outline-primary</code></td>
+                                            <td><button type="button" class="btn btn-outline-primary">Primary</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-outline-secondary</code></td>
+                                            <td><button type="button" class="btn btn-outline-secondary">Secondary</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-outline-success</code></td>
+                                            <td><button type="button" class="btn btn-outline-success">Success</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-outline-danger</code></td>
+                                            <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-outline-warning</code></td>
+                                            <td><button type="button" class="btn btn-outline-warning">Warning</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-outline-info</code></td>
+                                            <td><button type="button" class="btn btn-outline-info">Info</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-outline-light</code></td>
+                                            <td><button type="button" class="btn btn-outline-light">Light</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn.btn-outline-dark</code></td>
+                                            <td><button type="button" class="btn btn-outline-dark">Dark</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;Secondary&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-success&quot;&gt;Success&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-warning&quot;&gt;Warning&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-info&quot;&gt;Info&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-light&quot;&gt;Light&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Dark&lt;/button&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="action">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 功能按鈕 <small class="text-muted">Action buttons</small></h2>
+                            <p class="lead">為使用者介面一致性，特定功能按鈕請使用個別的Class。<span class="text-danger">此僅定義功能按鈕但無任何樣式設定。</span></p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.btn-edit</code></td>
+                                            <td><button type="button" class="btn btn-success btn-edit">編輯</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn-view</code></td>
+                                            <td><button type="button" class="btn btn-secondary btn-view">檢視</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn-delete</code></td>
+                                            <td><button type="button" class="btn btn-danger btn-delete">刪除</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn-add</code></td>
+                                            <td><button type="button" class="btn btn-info btn-add">新增</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn-submit</code></td>
+                                            <td><button type="button" class="btn btn-primary btn-submit">送出</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn-search</code></td>
+                                            <td><button type="button" class="btn btn-primary btn-search">搜尋</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn-return</code></td>
+                                            <td><button type="button" class="btn btn-dark btn-return">返回</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn-export</code></td>
+                                            <td><button type="button" class="btn btn-outline-info btn-export">匯出</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-edit&quot;&gt;編輯&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-view&quot;&gt;檢視&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-delete&quot;&gt;刪除&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-add&quot;&gt;新增&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-submit&quot;&gt;送出&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-search&quot;&gt;搜尋&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-return&quot;&gt;返回&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-export&quot;&gt;匯出&lt;/button&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="events">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 行為按鈕 <small class="text-muted">Events buttons</small></h2>
+                            <p class="lead">在網頁應用上，部份的按鈕在點擊後需要觸發特定行為，可使用特定的樣式以進行套用。</p>
+                        </div>
+                        <div class="section-content">
+                            <h3 class="page-title">確認 <small class="text-muted">Confirm</small></h3>
+                            <p class="lead">按鈕點擊後需要顯示確認是否繼續動作，可使用 <code>.btn-confirm</code> 。如果需要指定詢問文字內容請在標籤上使用 <code>data-confirm</code> 屬性。</p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.btn-confirm</code></td>
+                                            <td>
+                                                <button type="button" class="btn btn-danger btn-delete btn-confirm">預設文字</button>
+                                                <button type="button" class="btn btn-danger btn-delete btn-confirm" data-confirm="指定文字內容">指定文字內容</button>
+                                                <a href="#" class="btn btn-danger btn-delete btn-confirm" data-confirm="超連結套用按鈕範例">超連結套用按鈕範例</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-delete btn-confirm&quot;&gt;預設文字&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-delete btn-confirm&quot; data-confirm=&quot;指定文字內容&quot;&gt;指定文字內容&lt;/button&gt;<br>&lt;a href=&quot;#&quot; class=&quot;btn btn-delete btn-confirm&quot; data-confirm=&quot;超連結套用按鈕範例&quot;&gt;超連結套用按鈕範例&lt;/a&gt;</code></pre></figure>
+                        </div>
+                        <div class="section-content">
+                            <h3 class="page-title">鎖定 <small class="text-muted">Disabled</small></h3>
+                            <p class="lead">按鈕點擊後要讓按鈕無法再次被點擊，可使用 <code>.btn-disable</code> 。</p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.btn-disable</code></td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-submit btn-disable">送出</button>
+                                                <a href="javascript:void();" class="btn btn-primary btn-submit btn-disable">超連結套用按鈕範例</a>
+                                                <button type="button" class="btn btn-primary btn-submit btn-disable btn-confirm">確認後鎖定</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-submit btn-disable&quot;&gt;送出&lt;/button&gt;<br>&lt;a href=&quot;#&quot; class=&quot;btn btn-submit btn-disable&quot;&gt;超連結套用按鈕範例&lt;/a&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-submit btn-disable btn-confirm&quot;&gt;確認後鎖定&lt;/button&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="icon">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 圖示 <small class="text-muted">Icon</small></h2>
+                            <p class="lead">在按鈕加入 Fontawesome icon。</p>
+                        </div>
+                        <div class="section-content">
+                            <p><button type="button" class="btn btn-primary"><i class="fas fa-check-circle"></i> Primary</button> <button type="button" class="btn btn-primary"><i class="fas fa-spinner fa-spin"></i> Primary</button></p>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt; Primary&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-spinner fa-spin&quot;&gt;&lt;/i&gt; Primary&lt;/button&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="size">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 尺寸 <small class="text-muted">Size</small></h2>
+                            <p class="lead">加入 <code>.btn-lg</code>, <code>.btn-sm</code> 或 <code>.btn-block</code> 來套用尺寸。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.btn-lg</code></td>
+                                            <td><button type="button" class="btn btn-primary btn-lg">btn-lg</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn-sm</code></td>
+                                            <td><button type="button" class="btn btn-primary btn-sm">btn-sm</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn-block</code></td>
+                                            <td><button type="button" class="btn btn-primary btn-block">btn-block</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;btn-lg&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;btn-sm&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot;&gt;btn-block&lt;/button&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="status">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 狀態 <small class="text-muted">Status</small></h2>
+                            <p class="lead">在按鈕加入 <code>disabled</code> 或在 <code>a</code> 標籤加入 <code>.active</code> 或 <code>.disabled</code> 來表示按鈕狀態。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code></code></td>
+                                            <td><button type="button" class="btn btn-primary">一般狀態</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>disabled</code></td>
+                                            <td><button type="button" class="btn btn-primary" disabled>停用狀態</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>a.active</code></td>
+                                            <td><a href="#" class="btn btn-primary active" role="button" aria-pressed="true">啟用狀態</a><p><span class="text-danger">* <code>a</code> 標籤才需要使用，各瀏覽器已針對 <code>button</code> 有預設按壓效果，沒必要再添加額外的 Class。</span></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>a.disabled</code></td>
+                                            <td><a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">停用狀態</a><p><span class="text-danger">* <code>a</code> 標籤不支援 <code>disabled</code> 屬性，所以必須要額外添加 <code>.disabled</code> 使其看起來被禁用，並請附加 <code>aria-disabled=&quot;true&quot;</code> 及 <code>tabindex=&quot;-1&quot;</code> 避免被選取或套用 Focus。</span></p></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;一般狀態&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; disabled&gt;停用狀態&lt;/button&gt;<br><br>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary active&quot; role=&quot;button&quot; aria-pressed=&quot;true&quot;&gt;啟用狀態&lt;/a&gt;<br>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary disabled&quot; tabindex=&quot;-1&quot; role=&quot;button&quot; aria-disabled=&quot;true&quot;&gt;停用狀態&lt;/a&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="countdown">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 倒數計時 <small class="text-muted">Countdown</small></h2>
+                            <p class="lead">加入 <code>.btn-countdown</code> 及搭配 <code>data-num=&quot;10&quot;</code> 設定秒數，以便達到倒數計時的效果。<br>若有修改倒數文字的需求請搭配 <code>data-text=&quot;顯示文字&quot;</code></p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.btn-countdown</code></td>
+                                            <td><button type="button" class="btn btn-primary btn-countdown" data-num="10">倒數計時</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.btn-countdown</code></td>
+                                            <td><button type="button" class="btn btn-primary btn-countdown" data-num="10" data-text="已發送簡訊">按此發送簡訊(切換文字)</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-countdown&quot; data-num=&quot;10&quot;&gt;倒數計時&lt;/button&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-countdown&quot; data-num=&quot;10&quot; data-text=&quot;已發送簡訊&quot;&gt;按此發送簡訊(切換文字)&lt;/button&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="scrollspy">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 返回頂端 <small class="text-muted">Return top</small></h2>
+                            <p class="lead">加入 <code>.btn-spytop</code>，以便返回頂端。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.btn-spytop</code></td>
+                                            <td><button type="button" class="btn btn-primary btn-spytop">返回頂端</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>a.btn-spytop</code></td>
+                                            <td><a href="#" class="btn btn-primary btn-spytop">返回頂端</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-spytop&quot;&gt;返回頂端&lt;/button&gt;<br>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-spytop&quot;&gt;返回頂端&lt;/a&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/CiaoyuUIKit/assets/jquery-3.3.1.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/popper.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/package.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/ciaoyu.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/include.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/setting.js" defer></script>
+</body>
+</html>

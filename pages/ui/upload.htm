@@ -1,0 +1,87 @@
+<!doctype html>
+<!--
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  | Designer: Tsai. Cheng Peng [Canboo]                              |
+  | Auther Email: service(a)canboo.tw                                |
+  | Author Web: http://canboo.tw/                                    |
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="rating" content="general" />
+    <meta name="author" content="Tsai. Cheng Peng (Canboo)"/>
+
+    <title>Uploads - Ciaoyu Web UI Kits</title>
+
+    <link rel="author license" href="http://canboo.tw/"/>
+    <link rel="shortcut icon" href="/CiaoyuUIKit/favicon.ico"/>
+    <link rel="icon" type="image/gif" href="/CiaoyuUIKit/favicon.gif"/>
+
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/package.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/ciaoyu.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/include.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/theme.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside></aside>
+        <header></header>
+        <main role="main">
+            <div class="main-inner">
+                <div class="page-header">
+                    <h1 class="page-title"><i class="fas fa-list-ul"></i> 上傳 <small class="text-muted">Uploads</small></h1>
+                    <p class="lead">表單控制項 file input 樣式和範例。</p>
+                </div>
+                <div class="page-content">
+                    <section id="basic">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 基本 <small class="text-muted">Basic</small></h2>
+                            <p class="lead">可藉由 <code>data-browse</code> 屬性來指定 <code>span::after</code> 所顯示的文字內容。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="demo-zone">
+                                <label for="file-demo">附件上傳</label>
+                                <div class="input-upload">
+                                    <input type="file" id="file-demo" aria-describedby="text-example-help">
+                                    <span>請選擇檔案</span>
+                                    <small id="text-example-help" class="form-text text-muted">簡易說明文字</small>
+                                </div>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;label for=&quot;file-demo&quot;&gt;附件上傳&lt;/label&gt;<br>&lt;div class=&quot;input-upload&quot;&gt;<br>    &lt;input type=&quot;file&quot; id=&quot;file-demo&quot; aria-describedby=&quot;text-example-help&quot;&gt;<br>    &lt;span&gt;請選擇檔案&lt;/span&gt;<br>    &lt;small id=&quot;text-example-help&quot; class=&quot;form-text text-muted&quot;&gt;簡易說明文字&lt;/small&gt;<br>&lt;/div&gt;</code></pre></figure>
+                            <div class="alert alert-success" role="alert">
+                                <span class="badge badge-warning">jQuery</span> 可透過 <code>$(selector).get(0).files.length</code> 確認是否有選取檔案 <button class="btn btn-sm btn-dark" onclick="alert('選取檔案數: '+$('#file-demo').get(0).files.length);">測試</button>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                                <span class="badge badge-warning">jQuery</span> 可透過 <code>$(selector).val().split('\\').pop()</code> 取得檔案名稱 <button class="btn btn-sm btn-dark" onclick="alert($('#file-demo').val().split('\\').pop());">測試</button>
+                            </div>
+                            <hr>
+                            <div class="demo-zone">
+                                <label for="file-demo2">附件上傳(指定文字)</label>
+                                <div class="input-upload">
+                                    <input type="file" id="file-demo2" accept="image/*">
+                                    <span data-browse="請挑選一張圖片">請選擇檔案</span>
+                                </div>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;label for=&quot;file-demo2&quot;&gt;附件上傳(指定文字)&lt;/label&gt;<br>&lt;div class=&quot;input-upload&quot;&gt;<br>    &lt;input type=&quot;file&quot; id=&quot;file-demo2&quot; accept=&quot;image/*&quot;&gt;<br>    &lt;span data-browse=&quot;請挑選一張圖片&quot;&gt;請選擇檔案&lt;/span&gt;<br>&lt;/div&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/CiaoyuUIKit/assets/jquery-3.3.1.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/popper.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/package.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/ciaoyu.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/include.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/setting.js" defer></script>
+</body>
+</html>

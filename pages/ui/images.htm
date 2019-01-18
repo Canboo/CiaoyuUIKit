@@ -1,0 +1,229 @@
+<!doctype html>
+<!--
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  | Designer: Tsai. Cheng Peng [Canboo]                              |
+  | Auther Email: service(a)canboo.tw                                |
+  | Author Web: http://canboo.tw/                                    |
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="rating" content="general" />
+    <meta name="author" content="Tsai. Cheng Peng (Canboo)"/>
+
+    <title>Images - Ciaoyu Web UI Kits</title>
+
+    <link rel="author license" href="http://canboo.tw/"/>
+    <link rel="shortcut icon" href="/CiaoyuUIKit/favicon.ico"/>
+    <link rel="icon" type="image/gif" href="/CiaoyuUIKit/favicon.gif"/>
+
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/package.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/ciaoyu.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/include.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/theme.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside></aside>
+        <header></header>
+        <main role="main">
+            <div class="main-inner">
+                <div class="page-header">
+                    <h1 class="page-title"><i class="fas fa-list-ul"></i> 圖片 <small class="text-muted">Images</small></h1>
+                    <p class="lead">全部經由類別來設定，選擇加入響應式與增加輕巧樣式之文件和範例。</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><span class="badge badge-warning">無障礙</span> 圖片必須要擁有 <code>alt</code> 屬性</li>
+                                <li><span class="badge badge-success">優化</span> 圖片有 <code>width</code> 及 <code>height</code> 屬性可加速 render 速度。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <section id="basic">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 基本 <small class="text-muted">Basic</small></h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="demo-zone">
+                                <img data-src="holder.js/300x200" alt="範例示意圖">
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;img src=&quot;holder.js/300x200&quot; alt=&quot;範例示意圖&quot;&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="diagram">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 圖說 <small class="text-muted">Diagram</small></h2>
+                            <p class="lead">使用 <code>figure.img-figure</code> 及 <code>figcaption</code> ，樣式已設定為置中且增加 <code>&lt;figcaption&gt;</code> 的符號。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="demo-zone">
+                                <figure class="img-figure">
+                                    <img data-src="holder.js/300x200" alt="範例示意圖">
+                                    <figcaption>圖說內容擺放的位置</figcaption>
+                                </figure>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;figure class=&quot;img-figure&quot;&gt;<br>    &lt;img data-src=&quot;holder.js/300x200&quot; alt=&quot;範例示意圖&quot;&gt;<br>    &lt;figcaption&gt;圖說內容擺放的位置&lt;/figcaption&gt;<br>&lt;/figure&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="thumbnails">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 縮圖 <small class="text-muted">Thumbnails</small></h2>
+                            <p class="lead">可以使用 <code>.img-thumbnail</code> 讓圖片有1px邊框的顯示。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="demo-zone">
+                                <img data-src="holder.js/300x200" class="img-thumbnail" alt="範例示意圖">
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;img src=&quot;holder.js/300x200&quot; class=&quot;img-thumbnail&quot; alt=&quot;範例示意圖&quot;&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="response">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 響應式圖片 <small class="text-muted">Responsive images</small></h2>
+                            <p class="lead">Bootstrap 中的圖片可利用 <code>.img-fluid</code> 設定為響應式。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="demo-zone">
+                                <img data-src="/CiaoyuUIKit/images/demo.jpg" class="img-fluid lazyload" alt="CiaoYu">
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;img src=&quot;/CiaoyuUIKit/images/demo.jpg&quot; class=&quot;img-fluid&quot; alt=&quot;CiaoYu&quot;&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="background">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 背景圖片 <small class="text-muted">Background Images</small></h2>
+                            <p class="lead">可以透過 <code>.img-setbg</code> 將圖片設定為上層元素的背景，上層元素可使用 <code>.setbg-cover</code>, <code>.setbg-contain</code> 設定 background-size，<code>.setbg-top</code> 及 <code>.setbg-center</code> 設定 background-position，<code>.text-hide</code> 設定文字不顯示。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="demo-zone">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th>Class</th>
+                                                <th>Preview</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><code></code></td>
+                                                <td>
+                                                    <div style="max-width:460px;height:200px;color:#fff;">
+                                                        <img data-src="/CiaoyuUIKit/images/demo.jpg" class="img-setbg lazyload" alt="CiaoYu">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.text-hide</code></td>
+                                                <td>
+                                                    <div class="text-hide" style="max-width:460px;height:200px;color:#fff;">
+                                                        <img data-src="/CiaoyuUIKit/images/demo.jpg" class="img-setbg lazyload" alt="CiaoYu">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.setbg-cover</code></td>
+                                                <td>
+                                                    <div class="setbg-cover" style="max-width:460px;height:200px;color:#fff;">
+                                                        <img data-src="/CiaoyuUIKit/images/demo.jpg" class="img-setbg lazyload" alt="CiaoYu">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.setbg-contain</code></td>
+                                                <td>
+                                                    <div class="setbg-contain" style="max-width:460px;height:200px;color:#fff;">
+                                                        <img data-src="/CiaoyuUIKit/images/demo.jpg" class="img-setbg lazyload" alt="CiaoYu">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.setbg-center</code></td>
+                                                <td>
+                                                    <div class="setbg-center" style="max-width:460px;height:200px;color:#fff;">
+                                                        <img data-src="/CiaoyuUIKit/images/demo.jpg" class="img-setbg lazyload" alt="CiaoYu">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.setbg-top</code></td>
+                                                <td>
+                                                    <div class="setbg-top" style="max-width:460px;height:200px;color:#fff;">
+                                                        <img data-src="/CiaoyuUIKit/images/demo.jpg" class="img-setbg lazyload" alt="CiaoYu">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.setbg-center.setbg-cover</code></td>
+                                                <td>
+                                                    <div class="setbg-center setbg-cover" style="max-width:460px;height:200px;color:#fff;">
+                                                        <img data-src="/CiaoyuUIKit/images/demo.jpg" class="img-setbg lazyload" alt="CiaoYu">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div&gt;<br>    &lt;img src=&quot;/CiaoyuUIKit/images/demo.jpg&quot; class=&quot;img-setbg&quot; alt=&quot;CiaoYu&quot;&gt;<br>    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;setbg-cover&quot;&gt;<br>    &lt;img src=&quot;/CiaoyuUIKit/images/demo.jpg&quot; class=&quot;img-setbg&quot; alt=&quot;CiaoYu&quot;&gt;<br>    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;setbg-contain&quot;&gt;<br>    &lt;img src=&quot;/CiaoyuUIKit/images/demo.jpg&quot; class=&quot;img-setbg&quot; alt=&quot;CiaoYu&quot;&gt;<br>    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;setbg-center&quot;&gt;<br>    &lt;img src=&quot;/CiaoyuUIKit/images/demo.jpg&quot; class=&quot;img-setbg&quot; alt=&quot;CiaoYu&quot;&gt;<br>    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;setbg-top&quot;&gt;<br>    &lt;img src=&quot;/CiaoyuUIKit/images/demo.jpg&quot; class=&quot;img-setbg&quot; alt=&quot;CiaoYu&quot;&gt;<br>    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;setbg-center setbg-cover&quot;&gt;<br>    &lt;img src=&quot;/CiaoyuUIKit/images/demo.jpg&quot; class=&quot;img-setbg&quot; alt=&quot;CiaoYu&quot;&gt;<br>    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;text-hide&quot;&gt;<br>    &lt;img src=&quot;/CiaoyuUIKit/images/demo.jpg&quot; class=&quot;img-setbg&quot; alt=&quot;CiaoYu&quot;&gt;<br>    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;<br>&lt;/div&gt;<br></code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="picture">
+                        <div class="section-header">
+                            <h2 class="page-title">
+                                <i class="fas fa-cube"></i> Picture HTML標籤
+                                <a href="https://www.w3schools.com/tags/tag_picture.asp" target="_blank" title="picture 標籤說明 [開新視窗]"><span class="badge badge-success">picture 標籤說明</span></a>
+                            </h2>
+                            <p class="lead">如果你使用 <code>&lt;picture&gt;</code> 元素為特定的 <code>&lt;img&gt;</code> 指定多個 <code>&lt;source&gt;</code> 元素，請確保將 <code>.img-*</code> 加到 <code>&lt;img&gt;</code> 而不是 <code>&lt;picture&gt;</code> 標籤。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="demo-zone">
+                                <picture>
+                                    <img data-src="/CiaoyuUIKit/images/demo.jpg" class="img-fluid img-thumbnail lazyload" alt="CiaoYu">
+                                </picture>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;picture&gt;<br>    &lt;source srcset=&quot;...&quot; type=&quot;image/svg+xml&quot;&gt;<br>    &lt;img src=&quot;/CiaoyuUIKit/images/demo.jpg&quot; class=&quot;img-fluid img-thumbnail&quot; alt=&quot;CiaoYu&quot;&gt;<br>&lt;/picture&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="centered">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 置中 <small class="text-muted">Center</small></h2>
+                            <p class="lead">利用 <code>.img-center</code> 設定為置中。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="demo-zone">
+                                <img data-src="holder.js/100x100" class="img-center" alt="範例示意圖">
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;img src=&quot;holder.js/100x100&quot; class=&quot;img-center&quot; alt=&quot;範例示意圖&quot;&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/CiaoyuUIKit/assets/jquery-3.3.1.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/popper.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/package.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/ciaoyu.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/include.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/setting.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/holderJs/holder.min.js" defer></script>
+</body>
+</html>

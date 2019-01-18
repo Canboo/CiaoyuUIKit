@@ -1,0 +1,225 @@
+<!doctype html>
+<!--
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  | Designer: Tsai. Cheng Peng [Canboo]                              |
+  | Auther Email: service(a)canboo.tw                                |
+  | Author Web: http://canboo.tw/                                    |
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="rating" content="general" />
+    <meta name="author" content="Tsai. Cheng Peng (Canboo)"/>
+
+    <title>Check/Radio - Ciaoyu Web UI Kits</title>
+
+    <link rel="author license" href="http://canboo.tw/"/>
+    <link rel="shortcut icon" href="/CiaoyuUIKit/favicon.ico"/>
+    <link rel="icon" type="image/gif" href="/CiaoyuUIKit/favicon.gif"/>
+
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/package.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/ciaoyu.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/include.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/theme.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside></aside>
+        <header></header>
+        <main role="main">
+            <div class="main-inner">
+                <div class="page-header">
+                    <h1 class="page-title"><i class="fas fa-list-ul"></i> 單複選 <small class="text-muted">Check/Radio</small></h1>
+                    <p class="lead">表單控制項 checkbox / radiobox 樣式和範例。</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><span class="badge badge-warning">無障礙</span> 各欄位必須要擁有 <code>id</code> 屬性，並有相對應的 <code>&lt;label for=&quot;id&quot;&gt;</code> 對應</li>
+                                <li><span class="badge badge-warning">無障礙</span> 如果欄位有描述文字，請使用 <code>aria-describedby</code> 屬性指向特定 <code>id</code> <a href="http://informationaccessibilityassociation.github.io/webAccessibility/errorcorrection/8_aria-desribedby_label.html" target="_blank" title="aria-describedby說明[開新視窗]">aria-describedby說明</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <section id="checkbox">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 複選 <small class="text-muted">Checkbox</small></h2>
+                            <p class="lead">由許多的 <code>type="checkbox"</code> 所組成，相同群組應有相同的 <code>name</code> 屬性。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="demo-zone">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="ex-1" value="option1" id="ex-1a" checked>
+                                    <label class="form-check-label" for="ex-1a">項目一</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="ex-1" value="option2" id="ex-1b">
+                                    <label class="form-check-label" for="ex-1b">項目二</label>
+                                </div>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-check&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-1&quot; value=&quot;option1&quot; id=&quot;ex-1a&quot; checked&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-1a&quot;&gt;項目一&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-1&quot; value=&quot;option2&quot; id=&quot;ex-1b&quot;&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-1b&quot;&gt;項目二&lt;/label&gt;<br>&lt;/div&gt;</code></pre></figure>
+                            <div class="alert alert-success" role="alert">
+                                <span class="badge badge-warning">jQuery</span> 取值使用 <br><code>$('input:checkbox:checked[name="自定義"]').map(function() { <br>&nbsp;&nbsp;&nbsp;&nbsp;return $(this).val(); <br>}).get();</code> <br><button class="btn btn-sm btn-dark" onclick="alert($('input:checkbox:checked[name=ex-1]').map(function() { return $(this).val(); }).get());">測試</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="radio">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 單選 <small class="text-muted">Radio</small></h2>
+                            <p class="lead">由許多的 <code>type="radio"</code> 所組成，相同群組應有相同的 <code>name</code> 屬性。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="demo-zone">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ex-2" id="ex-2a" value="option1" checked>
+                                    <label class="form-check-label" for="ex-2a">項目一</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ex-2" id="ex-2b" value="option2">
+                                    <label class="form-check-label" for="ex-2b">項目二</label>
+                                </div>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-check&quot;&gt;<br>    &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;ex-2&quot; id=&quot;ex-2a&quot; value=&quot;option1&quot; checked&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-2a&quot;&gt;項目一&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check&quot;&gt;<br>    &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;ex-2&quot; id=&quot;ex-2b&quot; value=&quot;option2&quot;&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-2b&quot;&gt;項目二&lt;/label&gt;<br>&lt;/div&gt;</code></pre></figure>
+                            <div class="alert alert-success" role="alert">
+                                <span class="badge badge-warning">jQuery</span> 取值使用 <code>$('input:radio:checked[name="自定義"]').val();</code> <button class="btn btn-sm btn-dark" onclick="alert($('input:radio:checked[name=ex-2]').val());">測試</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="color">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 顏色 <small class="text-muted">Colors</small></h2>
+                            <p class="lead">加上 <code>.form-check-*</code> 的Class使控制項看起來更亮麗。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="demo-zone">
+                                <div class="form-check form-check-primary">
+                                    <input type="checkbox" class="form-check-input" name="ex-3" value="option1" id="ex-3a" checked>
+                                    <label class="form-check-label" for="ex-3a">.form-check-primary</label>
+                                </div>
+                                <div class="form-check form-check-success">
+                                    <input type="checkbox" class="form-check-input" name="ex-3" value="option2" id="ex-3b" checked>
+                                    <label class="form-check-label" for="ex-3b">.form-check-success</label>
+                                </div>
+                                <div class="form-check form-check-danger">
+                                    <input type="checkbox" class="form-check-input" name="ex-3" value="option3" id="ex-3c" checked>
+                                    <label class="form-check-label" for="ex-3c">.form-check-danger</label>
+                                </div>
+                                <div class="form-check form-check-warning">
+                                    <input type="checkbox" class="form-check-input" name="ex-3" value="option3" id="ex-3d" checked>
+                                    <label class="form-check-label" for="ex-3d">.form-check-warning</label>
+                                </div>
+                                <div class="form-check form-check-info">
+                                    <input type="checkbox" class="form-check-input" name="ex-3" value="option3" id="ex-3e" checked>
+                                    <label class="form-check-label" for="ex-3e">.form-check-info</label>
+                                </div>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-check form-check-primary&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-3&quot; value=&quot;option1&quot; id=&quot;ex-3a&quot; checked&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-3a&quot;&gt;.form-check-primary&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-success&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-3&quot; value=&quot;option2&quot; id=&quot;ex-3b&quot;&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-3b&quot;&gt;.form-check-success&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-danger&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-3&quot; value=&quot;option3&quot; id=&quot;ex-3c&quot;&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-3c&quot;&gt;.form-check-danger&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-warning&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-3&quot; value=&quot;option3&quot; id=&quot;ex-3d&quot;&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-3d&quot;&gt;.form-check-warning&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-info&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-3&quot; value=&quot;option3&quot; id=&quot;ex-3e&quot;&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-3e&quot;&gt;.form-check-info&lt;/label&gt;<br>&lt;/div&gt;</code></pre></figure>
+                            <hr>
+                            <div class="demo-zone">
+                                <div class="form-check form-check-primary">
+                                    <input type="radio" class="form-check-input" name="ex-4" value="option1" id="ex-4a" checked>
+                                    <label class="form-check-label" for="ex-4a">.form-check-primary</label>
+                                </div>
+                                <div class="form-check form-check-success">
+                                    <input type="radio" class="form-check-input" name="ex-4" value="option2" id="ex-4b">
+                                    <label class="form-check-label" for="ex-4b">.form-check-success</label>
+                                </div>
+                                <div class="form-check form-check-danger">
+                                    <input type="radio" class="form-check-input" name="ex-4" value="option3" id="ex-4c">
+                                    <label class="form-check-label" for="ex-4c">.form-check-danger</label>
+                                </div>
+                                <div class="form-check form-check-warning">
+                                    <input type="radio" class="form-check-input" name="ex-4" value="option3" id="ex-4d">
+                                    <label class="form-check-label" for="ex-4d">.form-check-warning</label>
+                                </div>
+                                <div class="form-check form-check-info">
+                                    <input type="radio" class="form-check-input" name="ex-4" value="option3" id="ex-4e">
+                                    <label class="form-check-label" for="ex-4e">.form-check-info</label>
+                                </div>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-check form-check-primary&quot;&gt;<br>    &lt;input type=&quot;radio&quot; class=&quot;form-check-input&quot; name=&quot;ex-4&quot; value=&quot;option1&quot; id=&quot;ex-4a&quot; checked&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-4a&quot;&gt;.form-check-primary&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-success&quot;&gt;<br>    &lt;input type=&quot;radio&quot; class=&quot;form-check-input&quot; name=&quot;ex-4&quot; value=&quot;option2&quot; id=&quot;ex-4b&quot;&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-4b&quot;&gt;.form-check-success&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-danger&quot;&gt;<br>    &lt;input type=&quot;radio&quot; class=&quot;form-check-input&quot; name=&quot;ex-4&quot; value=&quot;option3&quot; id=&quot;ex-4c&quot;&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-4c&quot;&gt;.form-check-danger&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-warning&quot;&gt;<br>    &lt;input type=&quot;radio&quot; class=&quot;form-check-input&quot; name=&quot;ex-4&quot; value=&quot;option3&quot; id=&quot;ex-4d&quot;&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-4d&quot;&gt;.form-check-warning&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-info&quot;&gt;<br>    &lt;input type=&quot;radio&quot; class=&quot;form-check-input&quot; name=&quot;ex-4&quot; value=&quot;option3&quot; id=&quot;ex-4e&quot;&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-4e&quot;&gt;.form-check-info&lt;/label&gt;<br>&lt;/div&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="disable">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 禁用 <small class="text-muted">Disable</small></h2>
+                            <p class="lead">加上 <code>disabled</code> 的屬性防止使用者操作並使它看起來更淡。</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="demo-zone">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="ex-5" value="option1" id="ex-5f" checked disabled>
+                                    <label class="form-check-label" for="ex-5f">Default</label>
+                                </div>
+                                <div class="form-check form-check-primary">
+                                    <input type="checkbox" class="form-check-input" name="ex-5" value="option1" id="ex-5a" checked disabled>
+                                    <label class="form-check-label" for="ex-5a">.form-check-primary</label>
+                                </div>
+                                <div class="form-check form-check-success">
+                                    <input type="checkbox" class="form-check-input" name="ex-5" value="option2" id="ex-5b" disabled>
+                                    <label class="form-check-label" for="ex-5b">.form-check-primary</label>
+                                </div>
+                                <div class="form-check form-check-danger">
+                                    <input type="checkbox" class="form-check-input" name="ex-5" value="option3" id="ex-5c" disabled>
+                                    <label class="form-check-label" for="ex-5c">.form-check-danger</label>
+                                </div>
+                                <div class="form-check form-check-warning">
+                                    <input type="checkbox" class="form-check-input" name="ex-5" value="option3" id="ex-5d" disabled>
+                                    <label class="form-check-label" for="ex-5d">.form-check-warning</label>
+                                </div>
+                                <div class="form-check form-check-info">
+                                    <input type="checkbox" class="form-check-input" name="ex-5" value="option3" id="ex-5e" disabled>
+                                    <label class="form-check-label" for="ex-5e">.form-check-info</label>
+                                </div>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-check&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-5&quot; value=&quot;option1&quot; id=&quot;ex-5f&quot; checked disabled&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-5f&quot;&gt;Default&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-primary&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-5&quot; value=&quot;option1&quot; id=&quot;ex-5a&quot; checked disabled&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-5a&quot;&gt;.form-check-primary&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-success&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-5&quot; value=&quot;option2&quot; id=&quot;ex-5b&quot; disabled&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-5b&quot;&gt;.form-check-primary&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-danger&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-5&quot; value=&quot;option3&quot; id=&quot;ex-5c&quot; disabled&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-5c&quot;&gt;.form-check-danger&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-warning&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-5&quot; value=&quot;option3&quot; id=&quot;ex-5d&quot; disabled&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-5d&quot;&gt;.form-check-warning&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-info&quot;&gt;<br>    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; name=&quot;ex-5&quot; value=&quot;option3&quot; id=&quot;ex-5e&quot; disabled&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-5e&quot;&gt;.form-check-info&lt;/label&gt;<br>&lt;/div&gt;</code></pre></figure>
+                            <hr>
+                            <div class="demo-zone">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" name="ex-6" value="option1" id="ex-6f" checked disabled>
+                                    <label class="form-check-label" for="ex-6f">.form-check-primary</label>
+                                </div>
+                                <div class="form-check form-check-primary">
+                                    <input type="radio" class="form-check-input" name="ex-6" value="option1" id="ex-6a" checked disabled>
+                                    <label class="form-check-label" for="ex-6a">.form-check-primary</label>
+                                </div>
+                                <div class="form-check form-check-success">
+                                    <input type="radio" class="form-check-input" name="ex-6" value="option2" id="ex-6b" disabled>
+                                    <label class="form-check-label" for="ex-6b">.form-check-primary</label>
+                                </div>
+                                <div class="form-check form-check-danger">
+                                    <input type="radio" class="form-check-input" name="ex-6" value="option3" id="ex-6c" disabled>
+                                    <label class="form-check-label" for="ex-6c">.form-check-danger</label>
+                                </div>
+                                <div class="form-check form-check-warning">
+                                    <input type="radio" class="form-check-input" name="ex-6" value="option3" id="ex-6d" disabled>
+                                    <label class="form-check-label" for="ex-6d">.form-check-warning</label>
+                                </div>
+                                <div class="form-check form-check-info">
+                                    <input type="radio" class="form-check-input" name="ex-6" value="option3" id="ex-6e" disabled>
+                                    <label class="form-check-label" for="ex-6e">.form-check-info</label>
+                                </div>
+                            </div>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-check&quot;&gt;<br>    &lt;input type=&quot;radio&quot; class=&quot;form-check-input&quot; name=&quot;ex-6&quot; value=&quot;option1&quot; id=&quot;ex-6f&quot; checked disabled&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-6f&quot;&gt;.form-check-primary&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-primary&quot;&gt;<br>    &lt;input type=&quot;radio&quot; class=&quot;form-check-input&quot; name=&quot;ex-6&quot; value=&quot;option1&quot; id=&quot;ex-6a&quot; checked disabled&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-6a&quot;&gt;.form-check-primary&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-success&quot;&gt;<br>    &lt;input type=&quot;radio&quot; class=&quot;form-check-input&quot; name=&quot;ex-6&quot; value=&quot;option2&quot; id=&quot;ex-6b&quot; disabled&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-6b&quot;&gt;.form-check-primary&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-danger&quot;&gt;<br>    &lt;input type=&quot;radio&quot; class=&quot;form-check-input&quot; name=&quot;ex-6&quot; value=&quot;option3&quot; id=&quot;ex-6c&quot; disabled&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-6c&quot;&gt;.form-check-danger&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-warning&quot;&gt;<br>    &lt;input type=&quot;radio&quot; class=&quot;form-check-input&quot; name=&quot;ex-6&quot; value=&quot;option3&quot; id=&quot;ex-6d&quot; disabled&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-6d&quot;&gt;.form-check-warning&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-check form-check-info&quot;&gt;<br>    &lt;input type=&quot;radio&quot; class=&quot;form-check-input&quot; name=&quot;ex-6&quot; value=&quot;option3&quot; id=&quot;ex-6e&quot; disabled&gt;<br>    &lt;label class=&quot;form-check-label&quot; for=&quot;ex-6e&quot;&gt;.form-check-info&lt;/label&gt;<br>&lt;/div&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/CiaoyuUIKit/assets/jquery-3.3.1.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/popper.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/package.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/ciaoyu.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/include.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/setting.js" defer></script>
+</body>
+</html>

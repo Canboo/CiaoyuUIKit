@@ -1,0 +1,246 @@
+<!doctype html>
+<!--
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  | Designer: Tsai. Cheng Peng [Canboo]                              |
+  | Auther Email: service(a)canboo.tw                                |
+  | Author Web: http://canboo.tw/                                    |
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="rating" content="general" />
+    <meta name="author" content="Tsai. Cheng Peng (Canboo)"/>
+
+    <title>Ciaoyu Web UI Kits</title>
+
+    <link rel="author license" href="http://canboo.tw/"/>
+    <link rel="shortcut icon" href="/CiaoyuUIKit/favicon.ico"/>
+    <link rel="icon" type="image/gif" href="/CiaoyuUIKit/favicon.gif"/>
+
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/package.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/ciaoyukit/css/ciaoyu.min.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/include.css" />
+    <link rel="stylesheet" href="/CiaoyuUIKit/assets/theme-cms/css/theme.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside></aside>
+        <header></header>
+        <main role="main">
+            <div class="main-inner">
+                <div class="page-header">
+                    <h1 class="page-title"><i class="fas fa-list-ul"></i> 設計規範 <small class="text-muted">Guildline</small></h1>
+                    <p class="lead">Ciaoyu Web UI Kits 是由 Canboo (Tsai. Cheng Peng) 根據以往製作各種類型網站的經驗，將所有網頁常見的元素進行系統性的整理，並透過與數位視覺設計的討論，建立一個依附於 Bootstrap 的網站設計規範，便於專案協同伙伴能有一套建置標準進行開發。</p>
+                </div>
+                <div class="page-content">
+                    <section id="framework">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 框架版本 <small class="text-muted">Framework Version</small></h2>
+                        </div>
+                        <div class="section-content">
+                            <ul>
+                                <li>jQuery v3.3.1 (<a href="https://jquery.com/" target="_blank">https://jquery.com/</a>)</li>
+                                <li>Popper v1.14.6 (<a href="https://popper.js.org/" target="_blank">https://popper.js.org/</a>)</li>
+                                <li>Bootstrap v4.2.1 (<a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a>)</li>
+                                <li>Font Awesome Free v5.6.3 (<a href="https://fontawesome.com" target="_blank">https://fontawesome.com</a>)</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="principle">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 設計原則 <small class="text-muted">Design Principle</small></h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="p-3">
+                                        <h3 class="page-title">易用性</h3>
+                                        <p>UI 必須以大眾習慣的方式來設計，元件彼此之間的距離必須能夠讓使用者清楚辨別關連性，且外觀必須能夠清楚知道物件是否可點擊。</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3">
+                                        <h3 class="page-title">多螢體驗</h3>
+                                        <p>元件在規劃時都必須符合 Responsive Web Design 的需要，且考慮使用該裝置的情境，讓使用者在不同載具使用時都能得到一定水準的體驗。</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3">
+                                        <h3 class="page-title">解析度</h3>
+                                        <p>元件與圖形盡量使用 HTML/CSS 或 SVG 打造，特殊字型使用 Webfont 技術，重點圖片如 brand 應提供多尺寸備用，讓任何解析度下的網站都能夠以完美呈現。</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3">
+                                        <h3 class="page-title">可動性</h3>
+                                        <p>規範能讓協作伙伴針對專案取用共同的色彩、元件、以及程式碼，但針對需求允許修正並非鐵則，如果發現是規範不足之處，貢獻新的設計可加速未來專案開發時程。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="color">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 色彩 <small class="text-muted">Color</small></h2>
+                        </div>
+                        <div class="section-content">
+                            <h3 class="page-title">Bootstrap 佈景色調</h3>
+                            <p class="lead">Bootstrap 框架有針對佈景情境設置標準的色調，可針對情境搭配相對應的樣式</p>
+                            <div class="demo-zone">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 bg-primary text-white">主要 Primary</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 bg-secondary text-white">次要 Secondary</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 bg-success text-white">完成 Success</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 bg-danger text-white">危險 Danger</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 bg-warning text-dark">警告 Warning</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 bg-info text-white">資訊 Info</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 bg-light text-dark">亮色 Light</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 bg-dark text-white">暗色 Dark</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="page-title">主色調</h3>
+                            <p class="lead">主色調主要使用在版面配置或是大面積色塊的地方</p>
+                            <div class="demo-zone">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="p-3 mb-3 text-white" style="background-color:#009ab4">#009ab4</div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="p-3 mb-3 text-white" style="background-color:#17b4ad">#17b4ad</div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="p-3 mb-3 text-white" style="background-color:#013d93">#013d93</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="page-title">輔助色調</h3>
+                            <p class="lead">輔助色調主要使用在文字顏色、線條</p>
+                            <div class="demo-zone">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 text-white" style="background-color:#3c424d">#3c424d</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 text-white" style="background-color:#f4b152">#f4b152</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 text-white" style="background-color:#ffcc01">#ffcc01</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 text-white" style="background-color:#71b3d9">#71b3d9</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 text-dark" style="background-color:#d0d8eb">#d0d8eb</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 text-white" style="background-color:#d47483">#d47483</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 text-white" style="background-color:#4d4d4d">#4d4d4d</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 text-white" style="background-color:#ababab">#ababab</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 text-dark" style="background-color:#ddd">#ddd</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 mb-3 text-dark" style="background-color:#f3f3f3">#f3f3f3</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section id="markup">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> HTML架構 <small class="text-muted">HTML Markup</small></h2>
+                        </div>
+                        <div class="section-content">
+                            <ul>
+                                <li>請將 <code>&lt;meta charset=&quot;utf-8&quot; /&gt;</code> 置放在 <code>&lt;head&gt;</code> 的第一行，避免英文之外的語系在部份舊的瀏覽器中出現亂碼。</li>
+                                <li>若非必要，建議 <code>&lt;script&gt;</code> 請置放於 <code>&lt;body&gt;</code> 區塊的最後。</li>
+                            </ul>
+                            <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;zh-Hant-TW&quot;&gt;<br>    &lt;head&gt;<br>        &lt;meta charset=&quot;utf-8&quot; /&gt;<br>        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;<br>        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1&quot; /&gt;<br><br>        &lt;title&gt;Title&lt;/title&gt;<br><br>        &lt;link rel=&quot;shortcut icon&quot; href=&quot;...&quot;/&gt;<br>        &lt;link rel=&quot;stylesheet&quot; href=&quot;/CiaoyuUIKit/assets/bootstrap/bootstrap.min.css&quot; /&gt;<br>        &lt;link rel=&quot;stylesheet&quot; href=&quot;/CiaoyuUIKit/assets/fontawesome/css/fontawesome.min.css&quot; /&gt;<br>        &lt;link rel=&quot;stylesheet&quot; href=&quot;/CiaoyuUIKit/assets/ciaoyukit/css/ciaoyu.min.css&quot; /&gt;<br>        &lt;link rel=&quot;stylesheet&quot; href=&quot;...&quot; /&gt;<br>    &lt;/head&gt;<br>    &lt;body&gt;<br>        ...<br>        &lt;script src=&quot;/CiaoyuUIKit/assets/jquery-3.3.1.min.js&quot; defer&gt;&lt;/script&gt;<br>        &lt;script src=&quot;/CiaoyuUIKit/assets/bootstrap/popper.min.js&quot; defer&gt;&lt;/script&gt;<br>        &lt;script src=&quot;/CiaoyuUIKit/assets/bootstrap/bootstrap.min.js&quot; defer&gt;&lt;/script&gt;<br>        &lt;script src=&quot;/CiaoyuUIKit/assets/ciaoyukit/js/ciaoyu.min.js&quot; defer&gt;&lt;/script&gt;<br>        &lt;script src=&quot;...&quot;&gt;&lt;/script&gt;<br>    &lt;/body&gt;<br>&lt;/html&gt;</code></pre></figure>
+                        </div>
+                    </section>
+                    <section id="browser">
+                        <div class="section-header">
+                            <h2 class="page-title"><i class="fas fa-cube"></i> 瀏覽器 <small class="text-muted">Browser support</small></h2>
+                        </div>
+                        <div class="section-content">
+                            <p>瀏覽器支援度主要依據瀏覽器核心對於 CSS 的支持程度，若要支持過舊的版本往往需要選擇折衷方案導致不能使用更快更有效率的技術，比如說響應式設計(Responsive Web Design)、陰影(shadow)、以及圓角(border-radius)等。</p>
+                            <div class="demo-zone">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="p-3 mb-3 text-center">
+                                            <img class="img-center mb-2 lazyload" data-src="/CiaoyuUIKit/images/browser/chrome.svg" alt="Chrome">支援
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="p-3 mb-3 text-center">
+                                            <img class="img-center mb-2 lazyload" data-src="/CiaoyuUIKit/images/browser/firefox.svg" alt="Firefox">支援
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="p-3 mb-3 text-center">
+                                            <img class="img-center mb-2 lazyload" data-src="/CiaoyuUIKit/images/browser/edge.svg" alt="Microsoft Edge">支援
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="p-3 mb-3 text-center">
+                                            <img class="img-center mb-2 lazyload" data-src="/CiaoyuUIKit/images/browser/internet-explorer_9-11.svg" alt="Internet Explorer">IE10+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="p-3 mb-3 text-center">
+                                            <img class="img-center mb-2 lazyload" data-src="/CiaoyuUIKit/images/browser/safari-ios.svg" alt="Safari">支援
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="p-3 mb-3 text-center">
+                                            <img class="img-center mb-2 lazyload" data-src="/CiaoyuUIKit/images/browser/opera.svg" alt="Opera"> 支援
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/CiaoyuUIKit/assets/jquery-3.3.1.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/popper.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/bootstrap/bootstrap.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/package.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/ciaoyukit/js/ciaoyu.min.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/include.js" defer></script>
+    <script src="/CiaoyuUIKit/assets/theme-cms/js/setting.js" defer></script>
+</body>
+</html>
