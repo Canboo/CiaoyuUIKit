@@ -109,6 +109,7 @@ caption {
     font-size: 1rem;
     margin-right: 8px;
     vertical-align: sub;
+    font-weight: 900;
 }
 /*checkbox/radio*/
 .form-check {
